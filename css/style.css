@@ -5,9 +5,9 @@
 
 @font-face {
     font-family: OpenSans-Regular;
-    src: url("/font/OpenSans-Regular.ttf"),
-        url("/font/OpenSans-Regular.woff"),
-        url("/font/OpenSans-Regular.woff2");
+    src: url("../font/OpenSans-Regular.ttf"),
+        url("../font/OpenSans-Regular.woff"),
+        url("../font/OpenSans-Regular.woff2");
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -15,9 +15,9 @@
 
 @font-face {
     font-family: OpenSans-Bold;
-    src: url("/font/OpenSans-Bold.ttf"),
-        url("/font/OpenSans-Bold.woff"),
-        url("/font/OpenSans-Bold.woff2");
+    src: url("../font/OpenSans-Bold.ttf"),
+        url("../font/OpenSans-Bold.woff"),
+        url("../font/OpenSans-Bold.woff2");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -36,7 +36,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    background-image: url("/images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -164,19 +164,19 @@
 }
 
 .trends:nth-child(2)::before {
-    background-image: url("/images/trend1.jpg");
+    background-image: url("../images/trend1.jpg");
 }
 
 .trends:nth-child(3)::before {
-    background-image: url("/images/trend2.jpg");
+    background-image: url("../images/trend2.jpg");
 }
 
 .trends:nth-child(4)::before {
-    background-image: url("/images/trend3.jpg");
+    background-image: url("../images/trend3.jpg");
 }
 
 .trends:nth-child(5)::before {
-    background-image: url("/images/trend4.jpg");
+    background-image: url("../images/trend4.jpg");
 }
 
 .trends-category {
@@ -394,7 +394,7 @@
     height: 46px;
     border: none;
     background-color: #b59f5b;
-    background-image: url(/svg/search.svg);
+    background-image: url(../svg/search.svg);
     background-size: 20px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -646,15 +646,15 @@
 }
 
 .footer-icon-dribbble {
-    background-image: url(/svg/001-dribbble.svg);
+    background-image: url(../svg/001-dribbble.svg);
 }
 
 .footer-icon-pinterest {
-    background-image: url(/svg/001-pinterest.svg);
+    background-image: url(../svg/001-pinterest.svg);
 }
 
 .footer-icon-tumblr {
-    background-image: url(/svg/003-tumblr.svg);
+    background-image: url(../svg/003-tumblr.svg);
 }
 
 .copyright {
@@ -699,7 +699,7 @@
     position: absolute;
     right: 0px;
     top: -25px;
-    background-image: url(/svg/form-x.svg);
+    background-image: url(../svg/form-x.svg);
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -739,7 +739,7 @@
     margin-bottom: 30px;
     color: #646665;
     font-family: OpenSans-Regular;
-    background-image: url(/svg/form-arrows.svg);
+    background-image: url(../svg/form-arrows.svg);
     background-size: 12px;
     background-position: right 14px center;
     background-repeat: no-repeat;
@@ -768,7 +768,7 @@
     height: 20px;
     margin-right: 8px;
     border-radius: 100%;
-    background-image: url(/svg/form-empty-circle.svg);
+    background-image: url(../svg/form-empty-circle.svg);
     background-size: 17px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -776,7 +776,7 @@
 }
 
 .popur-radio:checked+.popur-radio-cnt::before {
-    background-image: url(/svg/form-circle.svg);
+    background-image: url(../svg/form-circle.svg);
     background-size: 17px;
 }
 
@@ -837,7 +837,7 @@
         width: 100%;
         height: 100%;
         opacity: 0.4;
-        background-image: url("/images/banner-mobile.jpg");
+        background-image: url("../images/banner-mobile.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1060,7 +1060,7 @@
         width: 100%;
         height: 100%;
         opacity: 0.4;
-        background-image: url("/images/banner-bg-tablet.jpg");
+        background-image: url("../images/banner-bg-tablet.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
