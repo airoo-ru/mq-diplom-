@@ -180,7 +180,7 @@
 }
 
 .trends-category {
-    position: absolute;
+    position: relative;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -549,22 +549,26 @@
     width: 340px;
     box-sizing: border-box;
     padding: 20px;
-    outline-offset: 2px;
-    outline: 2px solid #b59f5b;
-    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .picture {
     display: block;
-    margin-top: -200px;
     width: 300px;
     height: 200px;
 }
 
+.section-shop-content {
+    padding-top: 20px;
+    outline-offset: 20px;
+    outline: 2px solid #b59f5b;
+    flex-grow: 1;
+}
+
 .title-shop {
     font-size: 20px;
-    margin-top: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-family: OpenSans-Bold;
@@ -607,15 +611,17 @@
     font-size: 20px;
 }
 
-.shop-button {
+.shop-link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 130px;
     height: 45px;
     cursor: pointer;
     background-color: #b59f5b;
     color: #ffffff;
     text-transform: uppercase;
-    border: none;
-    outline: none;
+    text-decoration: none;
     font-family: OpenSans-Bold;
     font-size: 14px;
 }
@@ -715,7 +721,6 @@
     width: 388px;
     box-sizing: border-box;
     background-color: #fff;
-    min-height: 500px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
@@ -729,7 +734,7 @@
 }
 
 .popur-select {
-    width: 325px;
+    width: 100%;
     height: 46px;
     border: none;
     outline: none;
@@ -853,6 +858,7 @@
     .wrap {
         width: 100%;
         flex-direction: column-reverse;
+        flex-grow: 1;
     }
 
     .logo-img {
@@ -873,11 +879,33 @@
 
     .menu-item {
         display: none;
-        padding: 10px;
+        padding: 0px;
+        margin: 10px;
+
     }
 
-    .menu-item:nth-child(1) {
-        display: inline-block;
+    .menu-item:nth-child(1),
+    .menu-item:nth-child(1)::before,
+    .menu-item:nth-child(1)::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        border-radius: 2px;
+        right: 0px;
+    }
+
+    .menu-item:nth-child(1)::before {
+        content: '';
+        margin-top: -8px;
+        right: 0px;
+    }
+
+    .menu-item:nth-child(1)::after {
+        content: '';
+        margin-top: 8px;
+        right: 0px;
     }
 
     .header-title {
@@ -972,9 +1000,6 @@
         max-width: 100%;
         box-sizing: border-box;
         padding: 0px 25px;
-        outline-offset: -3px;
-        outline: 3px solid #b59f5b;
-        margin-top: 255px;
         margin-bottom: 30px;
         flex-grow: 1;
     }
@@ -982,7 +1007,6 @@
     .picture {
         display: flex;
         flex-wrap: wrap;
-        margin-top: -255px;
         width: 100%;
         height: 285px;
         justify-content: center;
@@ -1078,7 +1102,7 @@
         margin-left: 37px;
         margin-right: 37px;
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -1092,12 +1116,30 @@
 
     .menu-item {
         display: none;
-        padding: 10px;
+        padding: 0px;
     }
 
-    .menu-item:nth-child(1) {
-        display: inline-block;
+    .menu-item:nth-child(1),
+    .menu-item:nth-child(1)::before,
+    .menu-item:nth-child(1)::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        border-radius: 2px;
     }
+
+    .menu-item:nth-child(1)::before {
+        content: '';
+        margin-top: -8px;
+    }
+
+    .menu-item:nth-child(1)::after {
+        content: '';
+        margin-top: 8px;
+    }
+
 
     .header-title {
         font-size: 40px;
@@ -1150,7 +1192,6 @@
     }
 
     .section-pic {
-        width: 100%;
         float: none;
     }
 
@@ -1193,16 +1234,12 @@
     .section-shop {
         box-sizing: border-box;
         padding: 0px 25px;
-        outline-offset: -3px;
-        outline: 3px solid #b59f5b;
-        margin-top: 220px;
         margin-bottom: 30px;
     }
 
     .picture {
         display: flex;
         flex-wrap: wrap;
-        margin-top: -255px;
         width: 100%;
         height: 285px;
         justify-content: center;
